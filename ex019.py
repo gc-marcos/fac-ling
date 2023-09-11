@@ -1,0 +1,13 @@
+import pandas as pd 
+series_dados = pd.Series([10.2, -1, None, 15, 23.4])
+print('Quantidade de linha: ', len(series_dados))
+print('Tipos de dados: ', series_dados.dtypes)
+print('Os valores são unicos: ', series_dados.unique())
+print('Existem valores nulos: ', series_dados.hasnans)
+print('Quantos valores existem: ', series_dados.count())
+print('Qual o menor valor: ', series_dados.min())
+print('Qual o valor maximo: ', series_dados.max())
+print('Qual a media aritmédica: ', series_dados.mean())
+print('Qual o desvio padrão: ', series_dados.std())
+print('Qual a mediana: ', series_dados.median())
+print('\n Resumo: \n', series_dados.describe())
